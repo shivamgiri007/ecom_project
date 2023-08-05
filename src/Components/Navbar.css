@@ -1,0 +1,22 @@
+*{
+   padding: 0;
+   margin: 0; 
+}
+.navbar{
+    max-height: 3vw;
+    display: flex;
+}
+
+/* LOGO SECTION  */
+.myntra_logo{
+    margin: 2px;
+}
+.myntra_logo img{
+    height: 2vw;
+}
+
+/* LIST SECTION  */
+
+.list_items{
+    display: flex;
+}
