@@ -1,6 +1,5 @@
 import React from "react";
 import logo from "../images/80601325.jpg";
-import "../Components/Navbar.css";
 
 export default function Navbar() {
   return (
@@ -53,6 +52,9 @@ export default function Navbar() {
             />
           </form>
         </div>
+        <div className="profile">
+        <i class="fa-regular fa-user"></i>
+     </div>
       </nav>
     </>
   );
