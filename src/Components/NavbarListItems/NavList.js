@@ -4,7 +4,6 @@ import KIDS from "./KIDS";
 import HOME_LIVING from "./HOME&LIVING";
 import STUDIO from "./STUDIO";
 import BEAUTY from "./BEAUTY";
-
 const NavList = {
     MEN : MEN ,
     WOMEN : WOMEN ,

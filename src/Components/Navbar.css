@@ -14,10 +14,11 @@
     width: auto;
 }
 .Navbar_Items{
-    padding-inline: 1vw;
+    margin-right: 0;
 }
 .Navbar_Items li{
     font-family: 'Poppins', sans-serif;
     font-weight:bolder;
     font-size:smaller;
+
 }

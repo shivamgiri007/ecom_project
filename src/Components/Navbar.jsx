@@ -16,7 +16,7 @@ export default function Navbar() {
     <a className="navbar-brand myntra-logo" href="./">
       <img src={logo} alt="Logo" width="30" height="24" className="d-inline-block align-text-top"/>
     </a>
-      <ul className="navbar-nav me-auto mb-2 mb-lg-0 Navbar_Items">
+      <ul className="navbar-nav me-auto mb-2   Navbar_Items">
       <li className="nav-item dropdown">
           <NavList.MEN />
       </li>
@@ -36,9 +36,14 @@ export default function Navbar() {
           <NavList.STUDIO />
       </li>
       </ul>
-      <form className="d-flex" role="search">
-        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button className="btn btn-outline-success" type="submit">Search</button>
+      <form className="d-flex border border-black" role="search">
+        <button className="btn btn-outline-success border border-0" type="submit">Search</button>
+        <input className="form-control me-2 border border-0" type="search" placeholder="Search for products brands and more" aria-label="Search"/>
+      </form>
+      <form action="click">
+      <button class="btn"><i class="fa-regular fa-user"></i>Profile</button>
+      <button class="btn"><i class="fa-regular fa-heart"></i>Wishlist</button>
+      <button class="btn"><i class="fa-solid fa-bag-shopping"></i>Bag</button>
       </form>
     </div>
   
