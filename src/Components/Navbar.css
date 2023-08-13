@@ -20,5 +20,12 @@
     font-family: 'Poppins', sans-serif;
     font-weight:bolder;
     font-size:smaller;
-
+}
+.icon_buttons button{
+    font-size: 11px;
+    font-weight: 800;
+}
+.search_input{
+    font-size:12px;
+    font-family: 'Poppins', sans-serif;
 }
