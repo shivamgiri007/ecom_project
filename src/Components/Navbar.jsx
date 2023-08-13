@@ -30,22 +30,22 @@ export default function Navbar() {
             />
           </a>
           <ul className="navbar-nav me-5  Navbar_Items">
-            <li className="nav-item dropdown">
+            <li className="nav-item dropdown p-2 text-nowrap">
               <NavList.MEN />
             </li>
-            <li className="nav-item dropdown">
+            <li className="nav-item dropdown p-2 text-nowrap">
               <NavList.WOMEN />
             </li>
-            <li className="nav-item dropdown">
+            <li className="nav-item dropdown p-2 text-nowrap">
               <NavList.KIDS />
             </li>
-            <li className="nav-item dropdown">
+            <li className="nav-item dropdown p-2 text-nowrap">
               <NavList.HOME_LIVING />
             </li>
-            <li className="nav-item dropdown">
+            <li className="nav-item dropdown p-2 text-nowrap">
               <NavList.BEAUTY />
             </li>
-            <li className="nav-item dropdown">
+            <li className="nav-item dropdown p-2 text-nowrap">
               <NavList.STUDIO />
             </li>
           </ul>

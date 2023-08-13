@@ -5,7 +5,7 @@ function WOMEN() {
     <>
       
         <a
-          className="nav-link dropdown-toggle"
+          className="nav-link"
           data-bs-toggle="dropdown"
           href="./"
           role="button"
