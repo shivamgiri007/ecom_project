@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../images/80601325.jpg";  
 import "./Navbar.css";
-import HomeList from "./NavbarListItems/HomeList";
+import NavList from "./NavbarListItems/NavList"
 
 
 export default function Navbar() {
@@ -16,24 +16,24 @@ export default function Navbar() {
     <a className="navbar-brand myntra-logo" href="./">
       <img src={logo} alt="Logo" width="30" height="24" className="d-inline-block align-text-top"/>
     </a>
-      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul className="navbar-nav me-auto mb-2 mb-lg-0 Navbar_Items">
       <li className="nav-item dropdown">
-          <HomeList />
+          <NavList.MEN />
       </li>
       <li className="nav-item dropdown">
-          <HomeList />
+          <NavList.WOMEN />
       </li>
       <li className="nav-item dropdown">
-          <HomeList />
+          <NavList.KIDS />
       </li>
       <li className="nav-item dropdown">
-          <HomeList />
+          <NavList.HOME_LIVING />
       </li>
       <li className="nav-item dropdown">
-          <HomeList />
+          <NavList.BEAUTY />
       </li>
       <li className="nav-item dropdown">
-          <HomeList />
+          <NavList.STUDIO />
       </li>
       </ul>
       <form className="d-flex" role="search">

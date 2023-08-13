@@ -1,6 +1,6 @@
 import React from 'react'
 
-function HomeList() {
+function HOME_LIVING() {
   return (
     <>
       
@@ -11,7 +11,7 @@ function HomeList() {
           role="button"
           aria-expanded="false"
         >
-          Dropdown
+          HOME & LIVING
         </a>
         <ul className="dropdown-menu">
           <li>
@@ -43,4 +43,4 @@ function HomeList() {
   )
 }
 
-export default HomeList
+export default HOME_LIVING

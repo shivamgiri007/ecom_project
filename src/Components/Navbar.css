@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap');
+
 .navbar{
     --bs-navbar-padding-x: 0;
     height: 5vw;
@@ -8,6 +10,14 @@
     padding-inline: 3vw;
 }
 .myntra-logo img{
-    height: 3vw;
+    height: 2.7vw;
     width: auto;
+}
+.Navbar_Items{
+    padding-inline: 1vw;
+}
+.Navbar_Items li{
+    font-family: 'Poppins', sans-serif;
+    font-weight:bolder;
+    font-size:smaller;
 }
