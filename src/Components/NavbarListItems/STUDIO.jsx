@@ -1,6 +1,6 @@
 import React from 'react'
 
-function STUDIO() {
+function STUDIO(props) {
   return (
     <>
       
@@ -11,7 +11,7 @@ function STUDIO() {
           role="button"
           aria-expanded="false"
         >
-          STUDIO
+          {props.L6_name}
         </a>
         <ul className="dropdown-menu">
           <li>
@@ -44,3 +44,6 @@ function STUDIO() {
 }
 
 export default STUDIO
+STUDIO.defaultProps = {
+  L6_name : "name6"
+}

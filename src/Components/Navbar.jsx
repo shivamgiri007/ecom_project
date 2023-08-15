@@ -3,7 +3,8 @@ import logo from "../images/80601325.jpg";
 import "./Navbar.css";
 import NavList from "./NavbarListItems/NavList";
 
-export default function Navbar() {
+
+export default function Navbar(props) {
   return (
     <>
       <nav className="navbar navbar-expand-lg m-2 border-bottom">
@@ -32,26 +33,26 @@ export default function Navbar() {
             </a>
             <ul className="navbar-nav me-5  Navbar_Items">
               <li className="nav-item dropdown p-2 text-nowrap">
-                <NavList.MEN />
+                <NavList.MEN L1_name={props.L1}/>
               </li>
               <li className="nav-item dropdown p-2 text-nowrap">
-                <NavList.WOMEN />
+                <NavList.WOMEN L2_name={props.L2}/>
               </li>
               <li className="nav-item dropdown p-2 text-nowrap">
-                <NavList.KIDS />
+                <NavList.KIDS L3_name={props.L3} />
               </li>
               <li className="nav-item dropdown p-2 text-nowrap">
-                <NavList.HOME_LIVING />
+                <NavList.HOME_LIVING L4_name={props.L4} />
               </li>
               <li className="nav-item dropdown p-2 text-nowrap">
-                <NavList.BEAUTY />
+                <NavList.BEAUTY L5_name = {props.L5} />
               </li>
               <li className="nav-item dropdown p-2 text-nowrap">
-                <NavList.STUDIO />
+                <NavList.STUDIO L6_name = {props.L6} />
               </li>
             </ul>
           </div>
-          <div className="search_logo_section d-contents">
+          <div className="search_logo_section">
             <form
               className="d-flex border border-secondary border-opacity-10 me-auto w-50 p-1 align-items-center bg-transparent search_form"
               role="search"
@@ -69,7 +70,7 @@ export default function Navbar() {
               <input
                 className="form-control me-2 border border-0 bg-transparent search_input fw-light"
                 type="search"
-                placeholder="Search for products brands and more"
+                placeholder={props.SEARCH_BAR_TEXT}
                 aria-label="Search"
               />
             </form>
@@ -119,4 +120,14 @@ export default function Navbar() {
       </nav>
     </>
   );
+}
+
+Navbar.defaultProps = {
+  L1 : "name1" ,
+  L2 : "name2" ,
+  L3 : "name3" ,
+  L4 : "name4" ,
+  L5 : "name5" ,
+  L6 : "name6" , 
+  SEARCH_BAR_TEXT : "Enter Text Here"
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 
-function HOME_LIVING() {
+function HOME_LIVING(props) {
   return (
     <>
       
@@ -11,7 +11,7 @@ function HOME_LIVING() {
           role="button"
           aria-expanded="false"
         >
-          HOME & LIVING
+          {props.L4_name}
         </a>
         <ul className="dropdown-menu">
           <li>
@@ -44,3 +44,6 @@ function HOME_LIVING() {
 }
 
 export default HOME_LIVING
+HOME_LIVING.defaultProps = {
+  L4_name : "name4"
+}

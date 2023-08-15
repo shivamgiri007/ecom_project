@@ -1,6 +1,6 @@
 import React from 'react'
 
-function WOMEN() {
+function WOMEN(props) {
   return (
     <>
       
@@ -11,7 +11,7 @@ function WOMEN() {
           role="button"
           aria-expanded="false"
         >
-          WOMEN
+          {props.L2_name}
         </a>
         <ul className="dropdown-menu">
           <li>
@@ -44,3 +44,6 @@ function WOMEN() {
 }
 
 export default WOMEN
+WOMEN.defaultProps = {
+  L2_name : "name2"
+}

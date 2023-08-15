@@ -1,6 +1,6 @@
 import React from 'react'
 
-function MEN() {
+function MEN(props) {
   return (
     <>
       
@@ -11,7 +11,7 @@ function MEN() {
           role="button"
           aria-expanded="false"
         >
-          MEN
+          {props.L1_name}
         </a>
         <ul className="dropdown-menu">
           <li>
@@ -44,3 +44,6 @@ function MEN() {
 }
 
 export default MEN
+MEN.defaultProps = {
+  L1_name : "L1_name"
+}

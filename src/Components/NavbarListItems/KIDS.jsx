@@ -1,6 +1,6 @@
 import React from 'react'
 
-function KIDS() {
+function KIDS(props) {
   return (
     <>
       
@@ -11,7 +11,7 @@ function KIDS() {
           role="button"
           aria-expanded="false"
         >
-          KIDS
+          {props.L3_name}
         </a>
         <ul className="dropdown-menu">
           <li>
@@ -44,3 +44,6 @@ function KIDS() {
 }
 
 export default KIDS
+KIDS.defaultProps = {
+  L3_name : "name3"
+}

@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <div className="Container">
-      <Navbar/>
+      <Navbar L1="MEN" L2="WOMEN" L3="KIDS" L4="HOME & LIVING" L5="BEAUTY" L6="STUDIO" SEARCH_BAR_TEXT="Search for products, brands and more"/>
 
       </div>
     </>

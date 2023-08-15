@@ -1,6 +1,6 @@
 import React from 'react'
 
-function BEAUTY() {
+function BEAUTY(props) {
   return (
     <>
       
@@ -11,7 +11,7 @@ function BEAUTY() {
           role="button"
           aria-expanded="false"
         >
-          BEAUTY
+          {props.L5_name}
         </a>
         <ul className="dropdown-menu">
           <li>
@@ -44,3 +44,6 @@ function BEAUTY() {
 }
 
 export default BEAUTY
+BEAUTY.defaultProps = {
+  L5_name : "name5"
+}
